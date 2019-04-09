@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{A2D87502-91E3-8134-9230-A38424659CD6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraMovement.cs">
     <Files>
       <File FileName="Assets/Scripts/GameController.cs" Line="95" Column="68" />
       <File FileName="Assets/Scripts/Alien.cs" Line="36" Column="21" />
       <File FileName="Assets/Scripts/Projectile.cs" Line="29" Column="37" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="70" Column="20" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="127" Column="31" />
       <File FileName="Assets/Scripts/ArenaWall.cs" Line="12" Column="56" />
       <File FileName="Assets/Scripts/Gun.cs" Line="51" Column="9" />
       <File FileName="Assets/Scripts/Upgrade.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/CameraShake.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CameraShake.cs" Line="41" Column="1" />
       <File FileName="Assets/Scripts/SelfDestruct.cs" Line="8" Column="1" />
       <File FileName="Assets/Scripts/DeathParticles.cs" Line="13" Column="57" />
       <File FileName="Assets/Scripts/ObjectPooler.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Arena.cs" Line="38" Column="38" />
+      <File FileName="Assets/Scripts/CameraMovement.cs" Line="23" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +21,7 @@
           <Node name="_Bobblehead_Wars_" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PlayerController.cs" selected="True" />
+                <Node name="CameraMovement.cs" selected="True" />
               </Node>
             </Node>
           </Node>

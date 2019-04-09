@@ -17,11 +17,9 @@ public class CameraMovement : MonoBehaviour {
         if(followTarget != null)
         {
             //rotate
-            transform.rotation = Quaternion.Lerp(transform.rotation, followTarget.transform.rotation, Time.deltaTime * 2.0f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, followTarget.transform.rotation, Time.deltaTime * 4.0f);
             //need to follow the target
             transform.position = Vector3.Lerp(transform.position, followTarget.transform.position, moveSpeed * Time.deltaTime);
-
-
 
         }
     }
