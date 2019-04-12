@@ -38,7 +38,6 @@ public class CameraShake : MonoBehaviour {
 
     public void Shake() 
     {
-
         originRotation = transform.rotation;
         shakeIntensity = intensity;
        

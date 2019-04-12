@@ -392,9 +392,9 @@ MonoBehaviour:
   - {fileID: 1049460382}
   alien: {fileID: 1292587452485126, guid: f39f75e5328bd4ca99f09d7cd98ca4af, type: 2}
   upgradePrefab: {fileID: 105092, guid: 941d6224549424c91b1cf112b44ec0cb, type: 2}
-  maxUpgradeSpawnTime: 7.5
+  maxUpgradeSpawnTime: 10
   gun: {fileID: 1854895234}
-  totalAliens: 35
+  totalAliens: 40
   minSpawnTime: 1
   maxSpawnTime: 3
   aliensPerSpawn: 4
