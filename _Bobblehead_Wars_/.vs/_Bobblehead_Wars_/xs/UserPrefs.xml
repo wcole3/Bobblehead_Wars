@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{A2D87502-91E3-8134-9230-A38424659CD6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Arena.cs">
     <Files>
       <File FileName="Assets/Scripts/GameController.cs" Line="95" Column="68" />
       <File FileName="Assets/Scripts/Alien.cs" Line="36" Column="21" />
@@ -12,7 +12,7 @@
       <File FileName="Assets/Scripts/SelfDestruct.cs" Line="8" Column="1" />
       <File FileName="Assets/Scripts/DeathParticles.cs" Line="13" Column="57" />
       <File FileName="Assets/Scripts/ObjectPooler.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Arena.cs" Line="38" Column="38" />
+      <File FileName="Assets/Scripts/Arena.cs" Line="28" Column="65" />
       <File FileName="Assets/Scripts/CameraMovement.cs" Line="23" Column="1" />
     </Files>
     <Pads>
@@ -21,7 +21,7 @@
           <Node name="_Bobblehead_Wars_" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="CameraMovement.cs" selected="True" />
+                <Node name="Arena.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -31,7 +31,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="266650a1-b49c-475a-9ebe-38df74417986" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5fe5f3fc-528a-4b87-aa8f-36a84bf20cd3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

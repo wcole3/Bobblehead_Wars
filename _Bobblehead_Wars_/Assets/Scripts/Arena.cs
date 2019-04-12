@@ -25,6 +25,7 @@ public class Arena : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         Camera.main.transform.parent.gameObject.GetComponent<CameraMovement>().enabled = false;//stop camera movement
+        Camera.main.GetComponent<CameraShake>().enabled = false;
         player.transform.parent = elevator.transform;//player becomes child of elevator
         player.GetComponent<PlayerController>().enabled = false;
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.elevatorArrived);
