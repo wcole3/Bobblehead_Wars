@@ -6,6 +6,12 @@ Slightly altered version of "Bobblehead Wars" from raywenderlich.com tutorial bo
 
 ##Changes from original tutorial
 
+-- Added UI for health and enemies remaining
+
+-- Added gameover panel to reset the game or exit (Only from build)
+
+-- Allowed gun upgrade to spawn multiple times
+
 -- Added free camera controls, controlled by mouse movement
 
 -- Changed player movement from World space to local (Player) space
