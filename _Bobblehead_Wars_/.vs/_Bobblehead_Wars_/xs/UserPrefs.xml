@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{A2D87502-91E3-8134-9230-A38424659CD6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraShake.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="95" Column="68" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="47" Column="42" />
       <File FileName="Assets/Scripts/Alien.cs" Line="36" Column="21" />
       <File FileName="Assets/Scripts/Projectile.cs" Line="29" Column="37" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="127" Column="31" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="121" Column="14" />
       <File FileName="Assets/Scripts/ArenaWall.cs" Line="12" Column="56" />
       <File FileName="Assets/Scripts/Gun.cs" Line="51" Column="9" />
       <File FileName="Assets/Scripts/Upgrade.cs" Line="11" Column="1" />
@@ -14,6 +14,7 @@
       <File FileName="Assets/Scripts/ObjectPooler.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Arena.cs" Line="28" Column="65" />
       <File FileName="Assets/Scripts/CameraMovement.cs" Line="23" Column="1" />
+      <File FileName="Assets/Scripts/GameUI.cs" Line="29" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,7 +22,7 @@
           <Node name="_Bobblehead_Wars_" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="CameraShake.cs" selected="True" />
+                <Node name="PlayerController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -31,7 +32,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="30bc5f5d-a74a-48a7-9fb5-2a37c34efd1d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cb7c0ca7-343e-4900-adef-ab7aa5dbce83" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

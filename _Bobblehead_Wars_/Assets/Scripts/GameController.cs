@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameController : MonoBehaviour {
+    //get the game UI
+    [SerializeField]
+    GameUI gameUI;
     //get player, spawnpoints, and alien
     public GameObject player;
     public GameObject[] spawnPoints;
@@ -33,12 +36,15 @@ public class GameController : MonoBehaviour {
     private bool upgradeSpwaned = false;
     private float currentUpgradeTime = 0;
     private float actualUpgradeTime = 0;
+    private int aliensNeededForWin;
 	// Use this for initialization
 	void Start () {
         //get the time to wait before spawning the upgrade
         actualUpgradeTime = Random.Range(maxUpgradeSpawnTime - 3.0f, maxUpgradeSpawnTime);
         //make sure its positive
         actualUpgradeTime = Mathf.Abs(actualUpgradeTime);
+        //set the game UI
+        gameUI.SetEnemyText(totalAliens);
 	}
 	
 	// Update is called once per frame
@@ -144,6 +150,8 @@ public class GameController : MonoBehaviour {
         {
             Invoke("EndGame", 2.0f);
         }
+        //update the UI
+        gameUI.SetEnemyText(totalAliens);
     }
     //end the game if player won
     private void EndGame()

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    GameUI gameUI;
     //speed constant
     public float moveSpeed = 50.0f;
     //get the marine body
@@ -119,6 +121,8 @@ public class PlayerController : MonoBehaviour
             {
                 //if not hit
                 ++hitNumber;
+                //update the UI
+                gameUI.DisableHealthBox(hitNumber);
                 //shake camera
                 CameraShake cameraShake = Camera.main.GetComponent<CameraShake>();
                 if(hitNumber < hitForce.Length)
