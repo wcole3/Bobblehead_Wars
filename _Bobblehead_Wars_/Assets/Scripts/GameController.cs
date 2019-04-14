@@ -124,7 +124,7 @@ public class GameController : MonoBehaviour {
         if(currentUpgradeTime > actualUpgradeTime && !upgradeSpwaned)
         {
             //spawn the upgrade
-            currentUpgradeTime = 0;//reset timer
+            currentUpgradeTime = -10;//reset timer to duration of upgrade
             //get a spwan point 
             int spawnPoint = Random.Range(0, spawnPoints.Length - 1);
             GameObject upgrade = (GameObject)Instantiate(upgradePrefab);
@@ -132,6 +132,7 @@ public class GameController : MonoBehaviour {
             //set the upgrade script and the gun script
             Upgrade upgradeScript = upgrade.GetComponent<Upgrade>();
             upgradeScript.gun = gun;
+            upgradeScript.game = this;
             //play upgrade spawn sound
             SoundManager.Instance.PlayOneShot(SoundManager.Instance.powerUpSpawn);
             //mark upgrade as spawned
@@ -157,6 +158,11 @@ public class GameController : MonoBehaviour {
     private void EndGame()
     {
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.victory);
+        gameUI.ShowElevatorPrompt();
         arenaAnimator.SetTrigger("PlayerWon");
+    }
+    public void UpgradePickedUp()
+    {
+        upgradeSpwaned = false;//reset the upgrade spawn
     }
 }

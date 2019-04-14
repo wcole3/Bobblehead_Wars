@@ -5,12 +5,14 @@ using UnityEngine;
 public class Upgrade : MonoBehaviour {
     //get reference to gun script
     public Gun gun;
+    public GameController game;
 
     public void OnTriggerEnter(Collider other)
     {
         gun.UpgradeGun();
         Destroy(gameObject);
         SoundManager.Instance.PlayOneShot(SoundManager.Instance.powerUpPickup);
+        game.UpgradePickedUp();
     }
 
 

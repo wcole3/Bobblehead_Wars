@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameUI : MonoBehaviour {
     //control the UI elements
@@ -9,6 +10,10 @@ public class GameUI : MonoBehaviour {
     private Text enemyText;
     [SerializeField]
     private Image[] healthButtons;
+    [SerializeField]
+    private GameObject gameOverPanel;
+    [SerializeField]
+    private Text elevatorPrompt;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +22,9 @@ public class GameUI : MonoBehaviour {
         {
             healthButton.gameObject.SetActive(true);
         }
+        //make sure gameover panel isn't shown
+        gameOverPanel.SetActive(false);
+        elevatorPrompt.gameObject.SetActive(false);
 	}
 	
 	public void SetEnemyText(int enemiesLeft)
@@ -27,5 +35,25 @@ public class GameUI : MonoBehaviour {
     public void DisableHealthBox(int box)
     {
         healthButtons[box].gameObject.SetActive(false);
+    }
+
+    public void ShowGameOverPanel()
+    {
+        gameOverPanel.SetActive(true);
+    }
+
+    public void ShowElevatorPrompt()
+    {
+        elevatorPrompt.gameObject.SetActive(true);
+    }
+
+    public void RestartButton()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
+    public void ExitButton()
+    {
+        Application.Quit();
     }
 }

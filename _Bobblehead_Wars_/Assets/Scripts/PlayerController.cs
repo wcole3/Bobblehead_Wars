@@ -162,6 +162,7 @@ public class PlayerController : MonoBehaviour
         //spill blood
         marineParticles.Activate();
         Destroy(gameObject);
-
+        //popup the game over panel
+        gameUI.ShowGameOverPanel();
     }
 }
